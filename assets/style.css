@@ -1,0 +1,23 @@
+/**
+Styles...
+ */
+
+.even {
+    float: right;
+    width: 50%;
+}
+
+.odd {
+    float: left;
+    width: 50%;
+}
+
+td {
+    border: 1px solid black;
+    height: 122px;
+    width: 122px;
+}
+
+.square {
+    padding-left: 24px;
+}

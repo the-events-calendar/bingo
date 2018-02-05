@@ -1,0 +1,20 @@
+{
+  "name": "tribe/bingo",
+  "type": "WordPress Plugin",
+  "description": "Generates bingo cards",
+  "license": "shruggy",
+  "config": {
+    "vendor-dir": "vendor",
+    "preferred-install": "dist"
+  },
+  "require": {
+    "pimple/pimple": "~3.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tribe\\Project\\": "src/"
+    },
+    "files": [
+    ]
+  }
+}
