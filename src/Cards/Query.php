@@ -17,7 +17,7 @@ class Query {
 
 		$free_space = [
 			[
-				'post_title' => __( 'FREE SQUARE', 'tribe' ),
+				'post_title' => $_POST[ Page::OPTION_NAME ][ Page::FREE ],
 			],
 		];
 

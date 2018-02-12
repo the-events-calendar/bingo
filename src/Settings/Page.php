@@ -13,6 +13,7 @@ class Page {
 	const GROUP_NAME  = 'tribe-bingo-option-group';
 	const ACTION      = 'tribe_bingo_cards';
 	const TITLE       = 'bingo-title';
+	const FREE        = 'bingo-free-square';
 	const QUANTITY    = 'bingo-quantity';
 	const DESCRIPTION = 'bingo-description';
 	const RULES       = 'bingo-rules';
@@ -50,6 +51,14 @@ class Page {
 			self::TITLE,
 			__( 'Title', 'tribe' ),
 			[ $this, 'title_callback' ],
+			self::SLUG,
+			self::SECTION
+		);
+
+		add_settings_field(
+			self::FREE,
+			__( 'Free Square Text', 'tribe' ),
+			[ $this, 'free_callback' ],
 			self::SLUG,
 			self::SECTION
 		);
@@ -103,6 +112,16 @@ class Page {
 			self::OPTION_NAME,
 			self::TITLE,
 			isset( $this->options[ self::TITLE ] ) ? esc_attr( $this->options[ self::TITLE ] ) : ''
+		);
+	}
+
+	public function free_callback() {
+		printf(
+			'<input type="text" id="%s" name="%s[%s]" value="%s" />',
+			self::FREE,
+			self::OPTION_NAME,
+			self::FREE,
+			isset( $this->options[ self::FREE ] ) ? esc_attr( $this->options[ self::FREE ] ) : ''
 		);
 	}
 
