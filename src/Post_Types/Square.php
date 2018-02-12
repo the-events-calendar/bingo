@@ -23,7 +23,7 @@ class Square extends Post_Type {
 			'supports'  => [
 				'title',
 			],
-			'menu_item' => 'dashicons-screenoptions',
+			'menu_icon' => 'dashicons-screenoptions',
 		];
 	}
 
