@@ -25,10 +25,10 @@ class Display {
 			$cards .= sprintf(
 				$file,
 				$card_count % 2 == 0 ? 'even' : 'odd',
-				$_POST[ Page::OPTION_NAME ][ Page::TITLE ],
-				$_POST[ Page::OPTION_NAME ][ Page::DESCRIPTION ],
+				wp_kses_stripslashes( $_POST[ Page::OPTION_NAME ][ Page::TITLE ] ),
+				wp_kses_stripslashes( $_POST[ Page::OPTION_NAME ][ Page::DESCRIPTION ] ),
 				$this->create_grid( $this->cards->make_card() ),
-				$_POST[ Page::OPTION_NAME ][ Page::RULES ]
+				wp_kses_stripslashes( $_POST[ Page::OPTION_NAME ][ Page::RULES ] )
 			);
 
 			$card_count ++;
