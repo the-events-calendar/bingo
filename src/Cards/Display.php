@@ -22,6 +22,9 @@ class Display {
 		$file       = file_get_contents( $path );
 		$cards      = '';
 		while ( $card_count <= $_POST[ Page::OPTION_NAME ][ Page::QUANTITY ] ) {
+			if ( $card_count % 2 ) {
+				$cards .= '<div class="print-break">';
+			}
 			$cards .= sprintf(
 				$file,
 				$card_count % 2 == 0 ? 'even' : 'odd',
@@ -30,6 +33,10 @@ class Display {
 				$this->create_grid( $this->cards->make_card() ),
 				wp_kses_stripslashes( $_POST[ Page::OPTION_NAME ][ Page::RULES ] )
 			);
+
+			if ( $card_count % 2 === 0 ) {
+				$cards .= '</div>';
+			}
 
 			$card_count ++;
 		}

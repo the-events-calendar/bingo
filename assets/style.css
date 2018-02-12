@@ -27,3 +27,29 @@ td {
     font-size: 27px;
     font-family: sans-serif;
 }
+
+@media print {
+    @page {
+        size: landscape
+    }
+
+    table {
+        height: 100%;
+    }
+
+    .print-break {
+        page-break-after: always;
+    }
+
+    td {
+        border: 1px solid black;
+        height: 60px;
+        width: 60px;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    .square {
+        padding-left: 6px;
+    }
+}
