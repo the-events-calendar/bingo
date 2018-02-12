@@ -16,8 +16,14 @@ td {
     border: 1px solid black;
     height: 122px;
     width: 122px;
+    font-family: sans-serif;
 }
 
 .square {
     padding-left: 24px;
+}
+
+.title {
+    font-size: 27px;
+    font-family: sans-serif;
 }
