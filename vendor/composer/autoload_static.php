@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit0052ace4ad1982b24c447769cc7db199
 {
+    public static $files = array (
+        '9e4824c5afbdc1482b6025ce3d4dfde8' => __DIR__ . '/..' . '/league/csv/src/functions_include.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
@@ -14,6 +18,10 @@ class ComposerStaticInit0052ace4ad1982b24c447769cc7db199
         'P' => 
         array (
             'Psr\\Container\\' => 14,
+        ),
+        'L' => 
+        array (
+            'League\\Csv\\' => 11,
         ),
     );
 
@@ -25,6 +33,10 @@ class ComposerStaticInit0052ace4ad1982b24c447769cc7db199
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'League\\Csv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/csv/src',
         ),
     );
 

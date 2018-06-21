@@ -8,7 +8,8 @@
     "preferred-install": "dist"
   },
   "require": {
-    "pimple/pimple": "~3.0@dev"
+    "pimple/pimple": "~3.0@dev",
+    "league/csv": "^9.1"
   },
   "autoload": {
     "psr-4": {

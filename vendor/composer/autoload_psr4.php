@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Tribe\\Bingo\\' => array($baseDir . '/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'League\\Csv\\' => array($vendorDir . '/league/csv/src'),
 );
