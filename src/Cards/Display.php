@@ -1,8 +1,8 @@
 <?php
 
-namespace Tribe\Project\Cards;
+namespace Tribe\Bingo\Cards;
 
-use Tribe\Project\Settings\Page;
+use Tribe\Bingo\Settings\Page;
 
 class Display {
 

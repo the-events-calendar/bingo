@@ -1,10 +1,10 @@
 <?php
 
-namespace Tribe\Project\Service_Providers;
+namespace Tribe\Bingo\Service_Providers;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Tribe\Project\Taxonomies\{
+use Tribe\Bingo\Taxonomies\{
 	Difficulty, Edition
 };
 

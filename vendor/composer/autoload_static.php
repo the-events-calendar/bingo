@@ -9,7 +9,7 @@ class ComposerStaticInit0052ace4ad1982b24c447769cc7db199
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
-            'Tribe\\Project\\' => 14,
+            'Tribe\\Bingo\\' => 12,
         ),
         'P' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInit0052ace4ad1982b24c447769cc7db199
     );
 
     public static $prefixDirsPsr4 = array (
-        'Tribe\\Project\\' => 
+        'Tribe\\Bingo\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

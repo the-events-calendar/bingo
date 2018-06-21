@@ -1,9 +1,9 @@
 <?php
 
-namespace Tribe\Project\Settings;
+namespace Tribe\Bingo\Settings;
 
-use Tribe\Project\Taxonomies\Difficulty;
-use Tribe\Project\Taxonomies\Edition;
+use Tribe\Bingo\Taxonomies\Difficulty;
+use Tribe\Bingo\Taxonomies\Edition;
 
 class Page {
 
@@ -55,13 +55,13 @@ class Page {
 //			self::SECTION
 //		);
 //
-//		add_settings_field(
-//			self::FREE,
-//			__( 'Free Square Text', 'tribe' ),
-//			[ $this, 'free_callback' ],
-//			self::SLUG,
-//			self::SECTION
-//		);
+		add_settings_field(
+			self::FREE,
+			__( 'Free Square Text', 'tribe' ),
+			[ $this, 'free_callback' ],
+			self::SLUG,
+			self::SECTION
+		);
 //
 //		add_settings_field(
 //			self::DESCRIPTION,

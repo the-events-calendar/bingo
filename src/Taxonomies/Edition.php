@@ -1,8 +1,8 @@
 <?php
 
-namespace Tribe\Project\Taxonomies;
+namespace Tribe\Bingo\Taxonomies;
 
-use Tribe\Project\Post_Types\Square;
+use Tribe\Bingo\Post_Types\Square;
 
 class Edition extends Taxonomy {
 

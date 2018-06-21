@@ -1,11 +1,11 @@
 <?php
 
-namespace Tribe\Project\Service_Providers;
+namespace Tribe\Bingo\Service_Providers;
 
 use Pimple\{
 	Container, ServiceProviderInterface
 };
-use Tribe\Project\Post_Types\Square;
+use Tribe\Bingo\Post_Types\Square;
 
 class Post_Types implements ServiceProviderInterface {
 

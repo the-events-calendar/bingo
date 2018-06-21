@@ -1,17 +1,19 @@
 <?php
 
-namespace Tribe\Project\Service_Providers;
+namespace Tribe\Bingo\Service_Providers;
 
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Tribe\Project\Cards\Display;
-use Tribe\Project\Cards\Query;
-use Tribe\Project\Settings\Page;
+use Tribe\Bingo\Cards\Csv;
+use Tribe\Bingo\Cards\Display;
+use Tribe\Bingo\Cards\Query;
+use Tribe\Bingo\Settings\Page;
 
 class Cards implements ServiceProviderInterface {
 
 	const DISPLAY = 'cards.display';
+	const CSV     = 'cards.csv';
 	const CARDS   = 'cards.query';
 
 	public function register( Container $container ) {
@@ -21,8 +23,11 @@ class Cards implements ServiceProviderInterface {
 		$container[ self::DISPLAY ] = function () use ( $container ) {
 			return new Display( $container[ self::CARDS ] );
 		};
+		$container[ self::CSV ] = function () use ( $container ) {
+			return new Csv( $container[ self::CARDS ] );
+		};
 		add_action( 'admin_post_' . Page::ACTION, function () use ( $container ) {
-			$container[ self::DISPLAY ]->create_cards();
+			$container[ self::CSV ]->create_cards();
 		} );
 	}
 

@@ -16,5 +16,5 @@ add_action( 'plugins_loaded', function () {
 }, 1, 0 );
 
 function tribe_bingo() {
-	return Tribe\Project\Core::instance( new Pimple\Container( [ 'plugin_file' => __FILE__ ]) );
+	return Tribe\Bingo\Core::instance( new Pimple\Container( [ 'plugin_file' => __FILE__ ]) );
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tribe\Project\Taxonomies;
+namespace Tribe\Bingo\Taxonomies;
 
 abstract class Taxonomy {
 

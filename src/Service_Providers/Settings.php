@@ -1,10 +1,10 @@
 <?php
 
-namespace Tribe\Project\Service_Providers;
+namespace Tribe\Bingo\Service_Providers;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
-use Tribe\Project\Settings\Page;
+use Tribe\Bingo\Settings\Page;
 
 class Settings implements ServiceProviderInterface {
 

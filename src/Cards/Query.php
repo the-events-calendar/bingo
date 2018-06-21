@@ -1,12 +1,12 @@
 <?php
 
-namespace Tribe\Project\Cards;
+namespace Tribe\Bingo\Cards;
 
 
-use Tribe\Project\Post_Types\Square;
-use Tribe\Project\Settings\Page;
-use Tribe\Project\Taxonomies\Difficulty;
-use Tribe\Project\Taxonomies\Edition;
+use Tribe\Bingo\Post_Types\Square;
+use Tribe\Bingo\Settings\Page;
+use Tribe\Bingo\Taxonomies\Difficulty;
+use Tribe\Bingo\Taxonomies\Edition;
 
 class Query {
 
@@ -17,7 +17,7 @@ class Query {
 
 		$free_space = [
 			[
-				'post_title' => $_POST[ Page::OPTION_NAME ][ Page::FREE ],
+				'post_title' => $_POST[ Page::OPTION_NAME ][ Page::FREE ] ?: 'Free Space',
 			],
 		];
 

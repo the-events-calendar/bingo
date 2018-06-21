@@ -1,6 +1,6 @@
 <?php
 
-namespace Tribe\Project\Post_Types;
+namespace Tribe\Bingo\Post_Types;
 
 abstract class Post_Type {
 

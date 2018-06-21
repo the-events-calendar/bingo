@@ -1,9 +1,9 @@
 <?php
 
-namespace Tribe\Project;
+namespace Tribe\Bingo;
 
 use Pimple\Container;
-use Tribe\Project\Service_Providers\{
+use Tribe\Bingo\Service_Providers\{
 	Cards, Post_Types, Settings, Taxonomies
 };
 
