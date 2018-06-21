@@ -47,37 +47,37 @@ class Page {
 			self::SLUG
 		);
 
-		add_settings_field(
-			self::TITLE,
-			__( 'Title', 'tribe' ),
-			[ $this, 'title_callback' ],
-			self::SLUG,
-			self::SECTION
-		);
-
-		add_settings_field(
-			self::FREE,
-			__( 'Free Square Text', 'tribe' ),
-			[ $this, 'free_callback' ],
-			self::SLUG,
-			self::SECTION
-		);
-
-		add_settings_field(
-			self::DESCRIPTION,
-			__( 'Description', 'tribe' ),
-			[ $this, 'description_callback' ],
-			self::SLUG,
-			self::SECTION
-		);
-
-		add_settings_field(
-			self::RULES,
-			__( 'Rules', 'tribe' ),
-			[ $this, 'rules_callback' ],
-			self::SLUG,
-			self::SECTION
-		);
+//		add_settings_field(
+//			self::TITLE,
+//			__( 'Title', 'tribe' ),
+//			[ $this, 'title_callback' ],
+//			self::SLUG,
+//			self::SECTION
+//		);
+//
+//		add_settings_field(
+//			self::FREE,
+//			__( 'Free Square Text', 'tribe' ),
+//			[ $this, 'free_callback' ],
+//			self::SLUG,
+//			self::SECTION
+//		);
+//
+//		add_settings_field(
+//			self::DESCRIPTION,
+//			__( 'Description', 'tribe' ),
+//			[ $this, 'description_callback' ],
+//			self::SLUG,
+//			self::SECTION
+//		);
+//
+//		add_settings_field(
+//			self::RULES,
+//			__( 'Rules', 'tribe' ),
+//			[ $this, 'rules_callback' ],
+//			self::SLUG,
+//			self::SECTION
+//		);
 
 		add_settings_field(
 			self::QUANTITY,
